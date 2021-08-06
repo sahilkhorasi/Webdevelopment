@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sahil Khorasi's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+  <style>
+    html{
+  align-content: center;
+}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: rgb(173, 132, 132);
+  color: black;
+}
+
+
+.header-right {
+  float: right;
+}
+
+.header-down{
+  float: right;
+}
+  
+.profile-image{
+    float: right;
+    width: auto;
+    padding: 20px;
+}
+.intro{
+  text-align: center;
+}
+.intro p{
+  float: left;
+  padding: 10px;
+  color: cadetblue;
+}
+
+.images{
+  order: 100;
+  text-align: center;
+}
+.intro p{
+    text-align: justify;
+    float: left;
+}
+
+body{
+    background: whitesmoke;
+    max-width: auto;
+    text-align: justify;	
+}
+
+.grid-container{
+display: grid;
+grid-template-columns: auto auto auto;
+grid-gap: 10px;
+background-color: white;
+padding: 10px;
+}
+
+.grid-container > div {
+background-color: rgba(255, 255, 255, 0.8);
+text-align: center;
+padding: 20px 0;
+font-size: 12px;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact{
+      text-align: center;
+  }
+
+  @media only screen and (min-width: 320px) {
+    
+    .profile-image{
+      padding-right: 40px;
+    }
+
+    li a{
+      display: block;
+    }
+    .header a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    
+    .header-right {
+      float: none;
+    }
+
+    .header-down{
+      display: none;
+    }
+
+    .intro{
+      text-align: center;
+    }
+
+    .grid-container{
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 10px;
+      background-color: white;
+      padding: 10px;
+      }
+      
+      .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 12px;
+      }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    
+    .header {
+      overflow: hidden;
+      background-color: whitesmoke;
+      padding: 10px 10px;
+    }
+    
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+    }
+    
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    .header a:hover {
+      background-color: rgb(173, 132, 132);
+      color: black;
+    }
+    
+    
+    .header-right {
+      float: right;
+    }
+
+    .header-down{
+      display: block;
+      float: right;
+    }
+
+    .intro{
+      text-align: center;
+    }
+
+    .grid-container{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 10px;
+      background-color: white;
+      padding: 10px;
+      }
+      
+      .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 12px;
+      }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .header {
+      overflow: hidden;
+      background-color: whitesmoke;
+      padding: 10px 10px;
+    }
+    
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+    }
+    
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    .header a:hover {
+      background-color: rgb(173, 132, 132);
+      color: black;
+    }
+    
+    
+    .header-right {
+      float: right;
+    }
+
+    .header-down{
+      float: right;
+      display: block;
+    }
+
+    .intro{
+      text-align: center;
+    }
+
+
+    .grid-container{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 10px;
+      background-color: white;
+      padding: 10px;
+      }
+      
+      .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 12px;
+      }
+
+      .profile-image{
+        padding: 5px;
+      }
+  } 
+
+
+
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+  </style>
+</head>
+  <body>
+    <div class="header">
+      <a href="#default" class="logo">Sahil Khorasi</a>
+      <div class="header-right"><br>
+        <a href="index.html">HOME</a>
+        <a href="#contact">PORTFOLIO</a>
+        <a href="#about">CONTACT</a>
+      </div>
+    </div>
+
+    <div class="intro">
+      <img src="images/responsive-layout-profile.png" height="150px" width="200px" alt="My Picture" class="profile-image">
+    </div>
+    <div style="color:slateblue;">
+      <p>Hi! I'm a front-end developer who loves responsive design and css.<br><br>
+         I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use<br><br>
+         I am a strong believer that tech is a bridge between the imagination and impact.<br><br>
+         Heartwarming to see you, happy to connect!</p>
+    </div>
+
+    <main style="background-color: white;" class="images"> 
+      <h2>PORTFOLIO</h2>
+        <div class="grid-container">
+        <div><img id="myImg0" src="images/portfolio-1.png" onclick="openModal()" alt="Marketing Page" style="width: 100%;" class="responsive"><figcaption>Marketing Page <br><br> This project shows the front page of a marketing website meant for a specific business I'm interested in.</figcaption></div>
+        <div><img id="myImg1" src="images/portfolio-2.png" onclick="openModal()" alt="Search Page" style="width: 100%;" class="responsive"><figcaption>Search Page <br><br> This project searchs through a specific database to find information that the user is trying to look up.</figcaption></div>
+        <div><img id="myImg2" src="images/portfolio-3.png" onclick="openModal()" alt="Travel App" style="width: 100%;" class="responsive"><figcaption>Travel App <br><br> This project compares travel times based on different transportation methods and tells you the best one.</figcaption></div>
+        <div><img id="myImg3" src="images/portfolio-4.png" onclick="openModal()" alt="Map of Favorite Spots" style="width: 100%;" class="responsive"><figcaption>Map of Favorite Spots <br><br> This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</figcaption></div>
+        <div><img id="myImg4" src="images/portfolio-5.png" onclick="openModal()" alt="Photo Gallery" style="width: 100%;" class="responsive"><figcaption>Photo Gallery <br><br> This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</figcaption></div>
+        <div><img id="myImg5" src="images/portfolio-6.png" onclick="openModal()" alt="Calculator" style="width: 100%;" class="responsive"><figcaption>Calculator <br><br> Someone can enter in the numbers they want, and press the big blue button and get the result.</figcaption></div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+      <script>
+       
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg0");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg1");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg2");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg3");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg4");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg5");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }     
+
+        }
+        </script>
+
+
+
+    </main>
+
+    <main class="contact">
+      <h2>CONTACT</h2><br>
+      <p>If you're interested in chatting or want more information<br> about what i've been working on, I'd love to hear from you!</p><br><br>
+      Phone <b>+1(111)555-1234</b><br><br>
+      Email <b>email@yoursite.com</b><br><br>
+    </main>
+
+    <footer>
+      <div class="header">
+        <a href="#default" class="logo">Sahil Khorasi</a>
+        <div class="header-right">
+          <div class="header-down">
+          <a href="index.html">HOME</a>
+          <a href="#contact">PORTFOLIO</a>
+          <a href="#about">CONTACT</a>
+          </div>
+        </div>
+      </div> 
+    </footer>
+    
+  </body>
+  </html>
